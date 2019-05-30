@@ -13,9 +13,10 @@
     <div id="app">
 
         <p>Scroll down the page</p>
-        <p v-tack="70">Stick me 70px from the top of the page</p>
+        <!-- <p v-tack="70">Stick me 70px from the top of the page</p> -->
+        <!-- <p v-tack:left="70">I will now be offset from the left instead of the top.</p> -->
 
-        <p v-tack:left="70">I will now be offset from the left instead of the top.</p>
+        <p v-tack="{top: '40', left: '100'}">Stick me 40px from the top of the page and 100px from the left of the page</p>
 
     </div>
 
