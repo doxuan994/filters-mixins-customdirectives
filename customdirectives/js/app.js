@@ -1,7 +1,10 @@
 Vue.directive('tack', {
     bind: function(el, binding, vnode) {
         el.style.position = 'fixed';
-        el.style.top = binding.value + 'px';
+
+        const s = (binding.arg == 'left' ? 'left' : 'top');
+
+        el.style[s] = binding.value + 'px';
     }
 });
 
